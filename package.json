@@ -1,17 +1,28 @@
 {
-  "name": "evagrafia2",
+  "name": "display-none",
   "version": "1.0.0",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "latest",
+    "autoprefixer": "^10.2.3",
+    "gulp": "latest",
     "gulp-clean-css": "latest",
     "gulp-concat": "latest",
     "gulp-minify-css": "latest",
     "gulp-notify": "latest",
     "gulp-plumber": "latest",
+    "gulp-postcss": "^9.0.0",
     "gulp-rename": "latest",
     "gulp-sass": "latest",
-    "gulp-uglify": "latest"
+    "gulp-uglify": "latest",
+    "postcss": "^8.2.4"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "scripts": {
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
 }

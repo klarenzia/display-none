@@ -5,7 +5,8 @@ var rename = require("gulp-rename");
 var minifycss = require("gulp-minify-css");
 var concat = require("gulp-concat");
 var plumber = require("gulp-plumber");
-const autoprefixer = require("gulp-autoprefixer");
+const autoprefixer = require("autoprefixer");
+const postcss = require("gulp-postcss");
 
 /* Scripts task */
 gulp.task("scripts", function () {
@@ -37,7 +38,7 @@ gulp.task("minify-main", function () {
 });
 
 /* Sass task */
-gulp.task("sass", function () {
+gulp.task("sass", function (done) {
   gulp
     .src("scss/style.scss")
     .pipe(plumber())
@@ -48,15 +49,12 @@ gulp.task("sass", function () {
         precision: 10,
       })
     )
-    .pipe(
-      autoprefixer({
-        browsers: ["last 2 versions"],
-        cascade: false,
-      })
-    )
+    .pipe(postcss([ autoprefixer() ]))
     .pipe(rename({ suffix: ".min" }))
     .pipe(minifycss())
     .pipe(gulp.dest("css"));
+
+    done();
 });
 
 gulp.task("merge-styles", function () {
@@ -80,7 +78,7 @@ gulp.task("merge-styles", function () {
   );
 });
 
-gulp.task("default", ["sass", "scripts"], function () {
-  gulp.watch(["scss/*.scss", "scss/**/*.scss"], ["sass"]);
-  gulp.watch(["js/main.js"], ["minify-main"]);
+gulp.task('default', () => {
+  gulp.watch('scss/*', gulp.series('sass'));
+  gulp.watch('js/main.js', gulp.series('minify-main'));
 });
