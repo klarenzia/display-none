@@ -29,29 +29,27 @@ body {
   background: $brand-black;
   color: $brand-white;
 }
+
 // Typography
 h1,
 h2,
 h3,
 h4 {
-  color: $brand-heading-text-color;
-  font-family: $font-secondary;
+  color: $brand-black;
+  font-family: $font-primary;
   margin: 1em 0 0.5em;
   font-weight: inherit;
   line-height: 0.5;
+  text-align: left;
 }
 h1 {
   margin-top: 2em;
   margin-bottom: 1em;
   font-size: 2em;
-  text-align: center;
 }
 h2 {
   font-size: 1.8em;
-  font-family: $font-secondary;
-  text-align: center;
   font-style: italic;
-  color: $brand-secondary;
   @media screen and (max-width: $screen-sm) {
     font-size: 1.4em;
   }
@@ -64,7 +62,7 @@ h4 {
 }
 small,
 .font_small {
-  font-size: 0.889em;
+  font-size: 0.8em;
 }
 
 p,
@@ -83,11 +81,7 @@ a {
     text-decoration: none;
   }
 }
-hr {
-  border-color: $brand-primary;
-  border-width: 2px;
-  width: 7em;
-}
+
 
 //header/
 
