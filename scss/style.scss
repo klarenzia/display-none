@@ -7,14 +7,13 @@
 
 html {
   overflow-x: hidden;
-  font-size: 1em;
+  font-size: 15px;
 }
 
 body {
   background: $brand-white;
-  font-size: 12px;
-  font-family: $font-primary;
   color: $brand-body-text-color;
+  font-family: $font-primary;
 
   @media screen and (max-width: $screen-sm) {
     font-size: 0.75em;
@@ -28,12 +27,12 @@ h3,
 h4,
 p {
   color: $brand-black;
-  font-family: $font-primary;
   text-align: left;
 }
 
 h1 {
   font-weight: 800;
+  font-size: 4rem;
 }
 
 h2 {
@@ -72,10 +71,10 @@ a {
 }
 
 
-//header/
+//nav/
 
 .probootstrap-header {
-  padding: 2em 0 4em;
+  padding: 2em 0 6em;
   width: 100%;
   z-index: 4;
   display: inline-block;
@@ -160,6 +159,15 @@ a {
   }
 }
 
+//header
+.aligned {
+  display: flex;
+
+  .centered {
+    margin: auto 0;
+  }
+}
+
 //section
 .probootstrap-section {
   position: relative;
@@ -173,9 +181,7 @@ a {
 
 // box
 .probootstrap-box {
-  margin-bottom: 2em;
   height: auto;
-  text-align: center;
 
   .image {
     width: 100%;
@@ -190,8 +196,12 @@ a {
   }
 
   .textos {
-    position: initial;
     clear: left;
+    line-height: 1.5em;
+
+    .h1 {
+      line-height: 3em;
+    }
   }
 
   @media screen and (max-width: $screen-sm) {
@@ -596,10 +606,3 @@ a {
     max-width: 80%;
   }
 }
-
-// .col-xxs-12 {
-//   @media screen and (max-width: 480px) {
-//     float: none;
-//     width: 100%;
-//   }
-// }
