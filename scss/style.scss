@@ -33,6 +33,7 @@ p {
 h1 {
   font-weight: 800;
   font-size: 4rem;
+  margin-bottom: 2rem;
 }
 
 h2 {
@@ -190,6 +191,7 @@ a {
       margin: 0;
       padding: 0 4rem 0 0;
       list-style: none;
+      text-transform: uppercase;
     }
   }
 
@@ -198,6 +200,14 @@ a {
   }
 }
 
+.gallery-column {
+  display: flex;
+  flex-direction: column;
+
+  .media {
+    padding-bottom: 1rem;
+  }
+}
 
 
 // box
