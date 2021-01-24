@@ -11,7 +11,7 @@ html {
 }
 body {
   background: $brand-white;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 200;
   font-family: $font-primary;
   color: $brand-body-text-color;
@@ -38,14 +38,13 @@ h4 {
   color: $brand-black;
   font-family: $font-primary;
   margin: 1em 0 0.5em;
-  font-weight: inherit;
   line-height: 0.5;
   text-align: left;
 }
 h1 {
   margin-top: 2em;
   margin-bottom: 1em;
-  font-size: 2em;
+  font-size: 4em;
 }
 h2 {
   font-size: 1.8em;
@@ -74,6 +73,7 @@ ol {
 a {
   transition: 0.3s all;
   color: $brand-body-text-color;
+  font-weight: bold;
   &:hover,
   &:focus,
   &:active {
@@ -86,7 +86,7 @@ a {
 //header/
 
 .probootstrap-header {
-  padding: 9em 0 1em;
+  padding: 2em 0 1em;
   width: 100%;
   z-index: 4;
   display: inline-block;
@@ -94,17 +94,19 @@ a {
     margin: 0 auto;
     display: -webkit-box;
     position: relative;
-    padding: 7em 0 0;
+    padding: 4em 0 0;
   }
 }
 
-.probootstrap-feature-first {
+/*.probootstrap-feature-first {
   position: relative;
   background: lighten($brand-primary, 40%);
 }
+*/
 
 .logo {
   float: left;
+  width: 20%;
   @media screen and (max-width: $screen-sm) {
     width: -webkit-fill-available;
     text-align: center;
@@ -116,7 +118,7 @@ a {
     width: -webkit-fill-available;
     text-align: center;
     img {
-      width: 50%;
+      width: 60%;
     }
   }
 }
@@ -159,18 +161,9 @@ a {
       padding: 0px;
     }
     a {
-      color: $brand-dropdown;
+      color: $brand-black;
       &:hover {
-        color: $brand-heading-text-color;
-      }
-    }
-    &.active {
-      a {
-        color: $brand-black;
-        font-weight: 200%;
-        &:hover {
-          color: $brand-heading-text-color;
-        }
+        color: $brand-primary;
       }
     }
   }
@@ -183,47 +176,8 @@ a {
   @media screen and (max-width: $screen-sm) {
     margin: 0 3em;
   }
-  &.probootstrap-section-colored {
-    background: $brand-primary;
-    padding: 6em 0;
-    margin: 3em 0;
-    .image {
-      width: 100%;
-      border-style: solid;
-      border-width: 5px;
-      border-color: #fff;
-      @media screen and (max-width: $screen-sm) {
-        width: 29%;
-        display: flow-root;
-        margin: 2%;
-        float: left;
-      }
-    }
-    p {
-      color: $brand-body-text-color;
-      text-align: center;
-    }
-    hr {
-      border-color: $brand-white;
-      border-width: 2px;
-      width: 6em;
-    }
-  }
 }
 
-// section heading
-
-.section-heading {
-  h2 {
-    font-size: 2.074em;
-    font-weight: 300;
-  }
-}
-
-.lead {
-  font-size: 1.125em;
-  line-height: 1.65;
-}
 
 // box
 .probootstrap-box {
@@ -250,36 +204,6 @@ a {
     // float: left;
     display: contents;
     // padding: 1em;
-  }
-}
-
-// servicios
-.probootstrap-zigzag {
-  height: auto;
-  text-align: center;
-  .image {
-    width: 80%;
-    padding: 0;
-  }
-  .textos {
-    padding: 2em 5em 7em;
-  }
-  p {
-    margin-top: 3em;
-    font-family: $font-secondary;
-    font-size: 1.4em;
-    color: $brand-heading-text-color;
-  }
-  .fondoShape {
-    display: block;
-    position: absolute;
-    width: 90%;
-    height: 250px;
-    margin: 15px -6%;
-    background-color: $brand-primary;
-    @media screen and (max-width: $screen-md) {
-      visibility: hidden;
-    }
   }
 }
 
@@ -423,7 +347,7 @@ a {
   }
 }
 
-// heading with icon
+/* heading with icon
 .heading-with-icon {
   @extend h2;
   margin-bottom: 1.5em;
@@ -443,6 +367,7 @@ a {
     display: inltial;
   }
 }
+*/
 
 // progress
 .progress {
