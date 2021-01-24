@@ -42,8 +42,8 @@ h2 {
 h3 {
   font-size: 1.25em;
 }
-h4 {
-  font-size: 1.1em;
+p {
+  font-size: 0.8em;
 }
 small,
 .font_small {
@@ -230,10 +230,9 @@ a {
   background-color: $brand-primary;
   border-color: $brand-primary;
   float: left;
-  &:hover,
-  &:focus {
+  text-transform:uppercase;
+  &:hover{
     transition: 0.2s all;
-    transform: scale(0.95);
     box-shadow: none;
     color: $brand-primary;
     background-color: $brand-black;
