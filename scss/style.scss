@@ -74,7 +74,7 @@ a {
 //nav/
 
 .probootstrap-header {
-  padding: 2em 0 6em;
+  padding: 2rem 0 6rem;
   width: 100%;
   z-index: 4;
   display: inline-block;
@@ -122,7 +122,7 @@ a {
 
 .probootstrap-main-nav {
   float: right;
-  padding: 1em 0 0 0;
+  padding: 1rem 0 0 0;
 
   @media screen and (max-width: $screen-sm) {
     display: inline;
@@ -132,26 +132,23 @@ a {
 
   li {
     margin: 0;
-    padding: 0 0 0 4em;
+    padding: 0 0 0 4rem;
     list-style: none;
     display: inline;
-    font-size: 1em;
 
     @media screen and (max-width: $screen-sm) {
       text-align: center;
       padding: 10px;
-      margin: 3em;
+      margin: 3rem;
       font-size: smaller;
     }
 
     @media screen and (max-width: $screen-xs) {
-      margin: 1em;
+      margin: 1rem;
       padding: 0px;
     }
 
     a {
-      color: $brand-black;
-
       &:hover {
         color: $brand-primary;
       }
@@ -172,11 +169,35 @@ a {
 .probootstrap-section {
   position: relative;
   z-index: 2;
+  margin-bottom: 6rem;
 
   @media screen and (max-width: $screen-sm) {
     margin: 0 3em;
   }
 }
+
+//gallery
+
+.filters {
+  padding: 1em 0 0 0;
+  display: flex;
+
+  .tabs {
+    display: flex;
+    padding-left: 0;
+
+    li {
+      margin: 0;
+      padding: 0 4rem 0 0;
+      list-style: none;
+    }
+  }
+
+  .dropdown {
+    margin-left: auto;
+  }
+}
+
 
 
 // box
@@ -274,6 +295,9 @@ a {
   border-color: $brand-primary;
   float: left;
   text-transform: uppercase;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 2rem;
 
   &:hover {
     transition: 0.2s all;
