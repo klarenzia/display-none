@@ -49,12 +49,12 @@ gulp.task("sass", function (done) {
         precision: 10,
       })
     )
-    .pipe(postcss([ autoprefixer() ]))
+    .pipe(postcss([autoprefixer()]))
     .pipe(rename({ suffix: ".min" }))
     .pipe(minifycss())
     .pipe(gulp.dest("css"));
 
-    done();
+  done();
 });
 
 gulp.task("merge-styles", function () {

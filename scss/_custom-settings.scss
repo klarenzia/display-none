@@ -4,8 +4,7 @@
 @font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoon/icomoon.eot?1z9v6x");
-  src: url("../fonts/icomoon/icomoon.eot?1z9v6x#iefix")
-      format("embedded-opentype"),
+  src: url("../fonts/icomoon/icomoon.eot?1z9v6x#iefix") format("embedded-opentype"),
     url("../fonts/icomoon/icomoon.ttf?1z9v6x") format("truetype"),
     url("../fonts/icomoon/icomoon.woff?1z9v6x") format("woff"),
     url("../fonts/icomoon/icomoon.svg?1z9v6x#icomoon") format("svg");
@@ -34,8 +33,10 @@
 }
 
 // Variables
-$font-primary: "Monserrat",  sans-serif;
-$font-secondary: "Monserrat",  sans-serif;
+$font-primary: "Monserrat",
+sans-serif;
+$font-secondary: "Monserrat",
+sans-serif;
 $brand-primary: #ffe600;
 $brand-secondary: red;
 $brand-black: #1e1e1e;
