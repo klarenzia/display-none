@@ -373,10 +373,12 @@ img {
   margin: 2rem auto;
   float: none;
   span{
-    padding:1rem;
     margin: 0 auto;
+    font-size: $font-12;
+    padding: 1rem;
     .icon{
-      font-size: $font-15;
+      font-size: $font-30;
+      margin: 1rem;
       color: $brand-primary;
       -webkit-text-stroke: 1px $brand-black;
     }
@@ -389,7 +391,7 @@ img {
   float: none;
   span{
   padding: 2rem;
-  font-size: $font-15;
+  font-size: $font-30;
 }
 }
 
