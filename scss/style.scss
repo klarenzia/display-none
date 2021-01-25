@@ -7,7 +7,7 @@
 
 html {
   overflow-x: hidden;
-  font-size: 0.8vw; 
+  font-size: 0.8vw;
 }
 
 body {
@@ -70,7 +70,7 @@ a {
 //elementos
 
 .cabecera {
-  margin-top: 3em;  
+  margin-top: 3em;
   margin-bottom: 3em;
   P{
     width: 50%;
@@ -78,7 +78,7 @@ a {
   }
 }
 
-img { 
+img {
   opacity: 0.6;
   width: -moz-available;
 }
@@ -253,7 +253,7 @@ img {
     font-size: $font-12;
     width: 100%;
     a{
-      
+
     float:right;
     }
   }
@@ -322,7 +322,7 @@ img {
 //about
 .team{
   .img{
-    opacity:0; 
+    opacity:0;
     border: 5px solid red;
   }
 }
@@ -337,7 +337,7 @@ img {
   text-transform: capitalize;
   padding: 1rem 2rem;
   max-width: min-content;
-  
+
   .names {
     font-weight: bolder;
       }
@@ -347,7 +347,7 @@ img {
   }
 }
 
-//blog 
+//blog
 
 //contact
 
@@ -397,23 +397,21 @@ img {
 
 //footer
 
-.probootstrap-footer{  
+.probootstrap-footer{
   background-color: $brand-black;
-  height: 10rem;
   .footer{
     display: flex;
-  .copyright {
-    display: inline-block;
-    color: $brand-white;
-    margin: 3em auto;
-    vertical-align: bottom;
-    img{
+    .copyright {
+      color: $brand-white;
+      font-size: $font-11;
+      margin: auto 0;
+      img{
       filter: invert(88%);
-      width: 10%;
+        width: 10%;
     }
     a{
       color: $brand-white;
-      font-size: $font-12;
+      font-size: $font-11;
       float: right;
       text-transform: uppercase;
     }
@@ -455,7 +453,7 @@ img {
   margin-top: 2rem;
 
   &:hover,
-  &:active, 
+  &:active,
   &:visited,
   &:focus,
   &:active:hover{
