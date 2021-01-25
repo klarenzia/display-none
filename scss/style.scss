@@ -402,6 +402,7 @@ img {
   .footer{
     display: flex;
     .copyright {
+      // display: flex;
       color: $brand-white;
       font-size: $font-11;
       margin: auto 0;
@@ -560,6 +561,8 @@ img {
   visibility: hidden;
 }
 
+
+
 // magnific popup
 .mfp-fade.mfp-bg {
   opacity: 0;
@@ -623,51 +626,3 @@ img {
   color: #ddd;
 }
 
-// Helper
-.probootstrap-gutter0 {
-  >div[class*="col-"] {
-    padding-right: 0px;
-    padding-left: 0px;
-
-    @media screen and (max-width: $screen-xs) {
-      padding-right: 0px;
-      padding-left: 0px;
-    }
-  }
-}
-
-.probootstrap-gutter10 {
-  >div[class*="col-"] {
-    padding-right: 5px;
-    padding-left: 5px;
-
-    @media screen and (max-width: $screen-xs) {
-      padding-right: 5px;
-      padding-left: 5px;
-    }
-  }
-}
-
-.probootstrap-gutter40 {
-  >div[class*="col-"] {
-    padding-right: 20px;
-    padding-left: 20px;
-
-    @media screen and (max-width: $screen-xs) {
-      padding-right: 15px;
-      padding-left: 15px;
-    }
-  }
-}
-
-.probootstrap-gutter60 {
-  >div[class*="col-"] {
-    padding-right: 30px;
-    padding-left: 30px;
-
-    @media screen and (max-width: $screen-xs) {
-      padding-right: 15px;
-      padding-left: 15px;
-    }
-  }
-}
