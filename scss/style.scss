@@ -37,7 +37,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.34rem;
+  font-size: 2rem;
   font-weight: bolder;
   @media screen and (max-width: $screen-sm) {
     font-size: 1.4rem;
@@ -295,6 +295,36 @@ img {
   }
 }
 
+//blog 
+
+//contact
+
+.form-control{
+  color: $brand-black;
+  border: 1px solid $brand-white;
+  box-shadow: inset 0 1px 1px $brand-white;
+  -webkit-box-shadow: inset 0 1px 1px $brand-white;
+  padding: 2px;
+  margin: 2px 0;
+  &:focus{
+  border: 1px solid $brand-black;
+  -webkit-box-shadow: inset 0 0 0px 0px;
+  box-shadow: inset 0 0px 0px;
+  transition: border-color ease-in-out 1s;
+  }
+
+}
+
+/* #typeText,
+#typeEmail,
+#textAreaExample {
+  border: 1px solid white;
+  ::placeholder{
+    color:black; 
+    font-size: xx-small;
+  }
+} */
+
 
 // box
 .probootstrap-box {
@@ -385,13 +415,17 @@ img {
 .btn-primary {
   color: $brand-black;
   background-color: $brand-primary;
-  border-color: $brand-primary;
+  border-width: 0;
   float: left;
   text-transform: uppercase;
   padding: 1rem 2rem;
   margin-top: 2rem;
 
-  &:hover {
+  &:hover,
+  &:active, 
+  &:visited,
+  &:focus,
+  &:active:hover{
     transition: 0.2s all;
     box-shadow: none;
     color: $brand-primary;
