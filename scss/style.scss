@@ -67,6 +67,9 @@ a {
   }
 }
 
+img { 
+  width: -moz-available;
+}
 
 //nav/
 
@@ -213,10 +216,6 @@ a {
     position: relative;
     display: inline-block;
 
-    img {
-      width: 400px;
-    }
-
     &:hover {
       .overlay {
         opacity: 0.85;
@@ -265,12 +264,7 @@ a {
 
 //partners
 .partners {
-  opacity: 0.4;
-
-  img {
-    width: 100%;
-  }
-
+  opacity: 0.5;
 }
 
 //about
@@ -278,7 +272,6 @@ a {
   .img{
     opacity:0; 
     border: 5px solid red;
-    width: -moz-available;
   }
 }
 
@@ -302,13 +295,6 @@ a {
   }
 }
 
-//blog
-.blog{
-img { 
-  width: -moz-available;
-}
-}
-
 
 // box
 .probootstrap-box {
@@ -329,7 +315,6 @@ img {
   .textos {
     clear: left;
     line-height: 1.5em;
-
     .h1 {
       line-height: 3em;
     }
