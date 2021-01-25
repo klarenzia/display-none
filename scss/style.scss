@@ -7,7 +7,7 @@
 
 html {
   overflow-x: hidden;
-  font-size:100%; 
+  font-size:8 pt; 
 }
 
 body {
@@ -64,6 +64,15 @@ a {
   &:active {
     color: $brand-body-text-color;
     text-decoration: none;
+  }
+}
+
+.cabecera {
+  clear: left;
+  line-height: 1.5em;
+  margin-bottom:2rem;
+  .h1 {
+    line-height: 3em;
   }
 }
 
@@ -136,6 +145,7 @@ img {
     padding: 0 0 0 4rem;
     list-style: none;
     display: inline;
+    font-size: 1rem;
 
     @media screen and (max-width: $screen-sm) {
       text-align: center;
@@ -236,7 +246,14 @@ img {
   }
 
   .dropdown {
-    margin-left: auto;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    width: 100%;
+    a{
+      
+    float:right;
+    }
   }
 }
 
@@ -385,6 +402,7 @@ img {
     display: inline-block;
     color: $brand-white;
     margin: 3em auto;
+    vertical-align: bottom;
     img{
       filter: invert(88%);
       width: 10%;
@@ -437,7 +455,7 @@ img {
   &:visited,
   &:focus,
   &:active:hover{
-    transition: 0.2s all;
+    transition: 1s all;
     box-shadow: none;
     color: $brand-primary;
     background-color: $brand-black;
@@ -452,10 +470,10 @@ img {
 
   &:hover,
   &:focus {
-    transition: 0.2s all;
+    transition: 1s all;
     transform: scale(0.95);
     box-shadow: none;
-    color: $brand-secondary;
+    color: $brand-primary;
   }
 }
 
@@ -483,7 +501,6 @@ img {
   i {
     position: relative;
     top: 2px;
-    opacity: 0;
     visibility: hidden;
     transition: 0.3s all;
     left: -20px;
