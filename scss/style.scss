@@ -188,10 +188,18 @@ a {
     padding-left: 0;
 
     li {
-      margin: 0;
-      padding: 0 4rem 0 0;
+      margin: 0 2rem 0 0;
+      padding: 1rem;
       list-style: none;
       text-transform: uppercase;
+      font-size: 0.8rem;
+
+      &:hover {
+        transition: 0.2s all;
+        box-shadow: none;
+        color: $brand-black;
+        background-color: $brand-primary;
+      }
     }
   }
 
