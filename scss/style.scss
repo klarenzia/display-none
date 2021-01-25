@@ -7,7 +7,7 @@
 
 html {
   overflow-x: hidden;
-  font-size:8 pt; 
+  font-size: 0.8vw; 
 }
 
 body {
@@ -33,7 +33,7 @@ p {
 h1 {
   font-weight: 800;
   font-size: 4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 h2 {
@@ -67,12 +67,14 @@ a {
   }
 }
 
+//elementos
+
 .cabecera {
-  clear: left;
-  line-height: 1.5em;
-  margin-bottom:2rem;
-  .h1 {
-    line-height: 3em;
+  margin-top: 3em;  
+  margin-bottom: 3em;
+  P{
+    width: 50%;
+    margin: 3em inherit;
   }
 }
 
@@ -667,121 +669,5 @@ img {
       padding-right: 15px;
       padding-left: 15px;
     }
-  }
-}
-
-.mb0 {
-  margin-bottom: 0px !important;
-}
-
-.mb10 {
-  margin-bottom: 10px !important;
-}
-
-.mb20 {
-  margin-bottom: 20px !important;
-}
-
-.mb30 {
-  margin-bottom: 30px !important;
-}
-
-.mb40 {
-  margin-bottom: 40px !important;
-}
-
-.mb50 {
-  margin-bottom: 50px !important;
-}
-
-.mb60 {
-  margin-bottom: 60px !important;
-}
-
-.mb70 {
-  margin-bottom: 70px !important;
-}
-
-.mb80 {
-  margin-bottom: 80px !important;
-}
-
-.mb90 {
-  margin-bottom: 90px !important;
-}
-
-.mb100 {
-  margin-bottom: 100px !important;
-}
-
-.mt0 {
-  margin-top: 0px !important;
-}
-
-.mt10 {
-  margin-top: 10px !important;
-}
-
-.mt20 {
-  margin-top: 20px !important;
-}
-
-.mt30 {
-  margin-top: 30px !important;
-}
-
-.mt40 {
-  margin-top: 40px !important;
-}
-
-.mt50 {
-  margin-top: 50px !important;
-}
-
-.mt60 {
-  margin-top: 60px !important;
-}
-
-.mt70 {
-  margin-top: 70px !important;
-}
-
-.mt80 {
-  margin-top: 80px !important;
-}
-
-.mt90 {
-  margin-top: 90px !important;
-}
-
-.mt100 {
-  margin-top: 100px !important;
-}
-
-.pb0 {
-  padding-bottom: 0 !important;
-}
-
-.probootstrap-black-color {
-  color: $brand-black !important;
-}
-
-.probootstrap-primary-color {
-  color: $brand-primary !important;
-}
-
-.probootstrap-secondary-color {
-  color: $brand-secondary !important;
-}
-
-.img-sm-responsive {
-  @media screen and (max-width: $screen-sm) {
-    max-width: 80%;
-  }
-}
-
-.img-xs-responsive {
-  @media screen and (max-width: $screen-sm) {
-    max-width: 80%;
   }
 }
