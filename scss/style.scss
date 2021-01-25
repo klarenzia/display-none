@@ -7,7 +7,7 @@
 
 html {
   overflow-x: hidden;
-  font-size: 15px;
+  font-size:100%; 
 }
 
 body {
@@ -37,25 +37,21 @@ h1 {
 }
 
 h2 {
-  font-size: 1.8em;
-  font-style: italic;
-
+  font-size: 1.34rem;
+  font-weight: bolder;
   @media screen and (max-width: $screen-sm) {
-    font-size: 1.4em;
+    font-size: 1.4rem;
   }
 }
 
 h3 {
-  font-size: 1.25em;
+  font-size: 0,938rem;
+  text-transform: uppercase;
+  font-weight: bolder;
 }
 
 p {
-  font-size: 0.8em;
-}
-
-small,
-.font_small {
-  font-size: 0.8em;
+  font-size: 0.75rem;
 }
 
 a {
@@ -177,7 +173,7 @@ a {
   }
 }
 
-//gallery
+//portfolio
 
 .filters {
   padding: 1em 0 0 0;
@@ -275,6 +271,42 @@ a {
     width: 100%;
   }
 
+}
+
+//about
+.team{
+  .img{
+    opacity:0; 
+    border: 5px solid red;
+    width: -moz-available;
+  }
+}
+
+.about-card {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transition: 1s ease;
+  background-color: $brand-primary;
+  text-transform: capitalize;
+  padding: 1rem 2rem;
+  max-width: min-content;
+  
+  .names {
+    font-weight: bolder;
+      }
+  .job-position {
+    font-size: 0.8rem;
+    color: $brand-white;
+  }
+}
+
+//blog
+.blog{
+img { 
+  width: -moz-available;
+}
 }
 
 
