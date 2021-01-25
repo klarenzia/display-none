@@ -341,21 +341,22 @@ img {
       padding: 0.5em;
     }
   }
+}
 
-  .textos {
-    clear: left;
-    line-height: 1.5em;
-    .h1 {
-      line-height: 3em;
-    }
+.textos {
+  clear: left;
+  line-height: 1.5em;
+  margin-bottom:2rem;
+  .h1 {
+    line-height: 3em;
   }
+}
 
-  @media screen and (max-width: $screen-sm) {
-    margin: 0 auto;
-    float: left;
-    display: contents;
-    padding: 1em;
-  }
+@media screen and (max-width: $screen-sm) {
+  margin: 0 auto;
+  float: left;
+  display: contents;
+  padding: 1em;
 }
 
 
