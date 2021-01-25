@@ -218,7 +218,7 @@ a {
     display: inline-block;
 
     img {
-      max-width: 400px;
+      width: 400px;
     }
 
     &:hover {
@@ -258,6 +258,17 @@ a {
     font-weight: bold;
   }
 }
+
+.show-me-more {
+  display: flex;
+
+  .btn {
+    margin: 2rem auto;
+  }
+}
+
+
+
 
 // box
 .probootstrap-box {
@@ -346,16 +357,13 @@ a {
 
 // Components
 
-// back to top button
-
 .btn-primary {
   color: $brand-black;
   background-color: $brand-primary;
   border-color: $brand-primary;
   float: left;
   text-transform: uppercase;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 1rem 2rem;
   margin-top: 2rem;
 
   &:hover {
@@ -366,6 +374,7 @@ a {
   }
 }
 
+// back to top button
 .back-to-top-button {
   color: $brand-primary;
   float: right;
