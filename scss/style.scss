@@ -68,6 +68,7 @@ a {
 }
 
 img { 
+  opacity: 0.6;
   width: -moz-available;
 }
 
@@ -159,10 +160,42 @@ img {
 //header
 .aligned {
   display: flex;
-
   .centered {
     margin: auto 0;
   }
+}
+
+// box
+.probootstrap-box {
+  height: auto;
+
+  .image {
+    width: 100%;
+
+    @media screen and (max-width: $screen-sm) {
+      margin: 0;
+      width: 50%;
+      float: left;
+      display: inline-block;
+      padding: 0.5em;
+    }
+  }
+}
+
+.textos {
+  clear: left;
+  line-height: 1.5em;
+  margin-bottom:2rem;
+  .h1 {
+    line-height: 3em;
+  }
+}
+
+@media screen and (max-width: $screen-sm) {
+  margin: 0 auto;
+  float: left;
+  display: contents;
+  padding: 1em;
 }
 
 //section
@@ -315,78 +348,55 @@ img {
 
 }
 
-/* #typeText,
-#typeEmail,
-#textAreaExample {
-  border: 1px solid white;
-  ::placeholder{
-    color:black; 
-    font-size: xx-small;
-  }
-} */
-
-
-// box
-.probootstrap-box {
-  height: auto;
-
-  .image {
-    width: 100%;
-
-    @media screen and (max-width: $screen-sm) {
-      margin: 0;
-      width: 50%;
-      float: left;
-      display: inline-block;
-      padding: 0.5em;
-    }
-  }
-}
-
-.textos {
-  clear: left;
-  line-height: 1.5em;
-  margin-bottom:2rem;
-  .h1 {
-    line-height: 3em;
-  }
-}
-
-@media screen and (max-width: $screen-sm) {
-  margin: 0 auto;
-  float: left;
-  display: contents;
-  padding: 1em;
-}
-
-
-.probootstrap-footer {
-  padding: 2em 0 2em 0;
-  position: relative;
-  width: 100%;
+.contact{
+  display: inline-flex;
   text-align: center;
-
-  @media screen and (max-width: $screen-sm) {
-    padding: 2em 0;
+  margin: 2rem auto;
+  float: none;
+  span{
+    padding:1rem;
+    margin: 0 auto;
+    .icon{
+      font-size: 1rem;
+      color: $brand-primary;
+      -webkit-text-stroke: 1px $brand-black;
+    }
   }
+}
+.social{
+  display: block;
+  text-align: center;
+  margin: 2rem auto;
+  float: none;
+  span{
+  padding: 2rem;
+  font-size: 1rem;
+}
+}
 
+//footer
+
+.probootstrap-footer{  
+  background-color: $brand-black;
+  height: 10rem;
+  .footer{
+    display: flex;
   .copyright {
-    font-size: small;
-    color: $brand-heading-text-color;
-
-    a {
-      color: $brand-heading-text-color;
+    display: inline-block;
+    color: $brand-white;
+    margin: 3em auto;
+    img{
+      filter: invert(88%);
+      width: 10%;
+    }
+    a{
+      color: $brand-white;
+      font-size: 0.75rem;
+      float: right;
+      text-transform: uppercase;
     }
   }
-
-  .probootstrap-back-to-top {
-    text-align: center;
-
-    @media screen and (max-width: $screen-sm) {
-      text-align: left;
-      margin-top: 30px;
-    }
-  }
+}
 }
 
 
