@@ -3,9 +3,6 @@
 html {
   overflow-x: hidden;
   font-size: 0.8vw;
-  @media (max-width: 800px) {
-    font-size: 12px;
-  }
 }
 
 body {
@@ -16,6 +13,12 @@ body {
 
 .container {
   width: 60%;
+  @media (max-width: 800px) {
+    width: 70%;
+  }
+  @media (max-width: 500px) {
+    width: 80%;
+  }
 }
 
 // Typography
@@ -53,12 +56,18 @@ a {
   transition: 1s all;
   color: $brand-body-text-color;
   font-weight: 500;
-
   &:hover,
   &:focus,
   &:active {
     color: $brand-body-text-color;
     text-decoration: none;
+  }
+}
+p,
+a,
+.btn {
+  @media (max-width: 800px) {
+    font-size: 12px;
   }
 }
 
@@ -136,7 +145,7 @@ img {
   @media screen and (max-width: $screen-sm) {
     display: inline;
     text-align: center;
-    padding: 35px 0 0;
+    padding: 2rem 0 0;
   }
 
   li {
@@ -167,9 +176,12 @@ img {
 }
 
 //header
+.header-section {
+  margin-top: 15rem;
+}
+
 .aligned {
   display: flex;
-  margin-top: 15rem;
   .centered {
     margin: auto 0;
   }
@@ -273,6 +285,9 @@ img {
   &:hover {
     background-color: $brand-primary;
     transition: 1s all;
+  }
+  @media (max-width: 800px) {
+    font-size: 12px;
   }
 }
 
