@@ -50,7 +50,7 @@ p {
 }
 
 a {
-  transition: 0.3s all;
+  transition: 1s all;
   color: $brand-body-text-color;
   font-weight: 500;
 
@@ -218,6 +218,8 @@ img {
 
 //portfolio
 
+//filtros--
+
 .filters {
   padding: 0 0 3rem 0;
   display: flex;
@@ -241,17 +243,66 @@ img {
       }
     }
   }
+}
 
-  .dropdown {
-    padding: 1rem;
-    text-transform: uppercase;
+//dropdown menu--
+
+.dropdown {
+  position: relative;
+  display: block;
+  float: right;
+  &:hover .dropbtn {
+    background-color: $brand-primary;
+  }
+  &:active .dropdown-content,
+  &:focus .dropdown-content,
+  &:focus-within .dropdown-content {
+    display: block;
+  }
+}
+
+.dropbtn {
+  font-size: $font-12;
+  border: none;
+  background-color: $brand-white;
+  padding: 1rem;
+  text-transform: uppercase;
+  &:hover {
+    background-color: $brand-primary;
+    transition: 1s all;
+  }
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  min-width: 100%;
+  float: right;
+  a {
+    display: block;
+    text-align: right;
     font-size: $font-12;
-    width: 100%;
-    a {
-      float: right;
+    color: $brand-black;
+    padding: $font-12 $font-15;
+    background-color: $brand-white;
+    &:hover {
+      background-color: $brand-primary;
     }
   }
 }
+
+.btn-secondary {
+  background-color: $brand-white;
+  font-size: $font-12;
+  color: $brand-black;
+  float: right;
+  a {
+    display: block;
+  }
+}
+
+//gallery
 
 .gallery-column {
   display: flex;
@@ -313,23 +364,15 @@ img {
 }
 
 //about
-.team {
-  .img {
-    opacity: 0;
-    border: 5px solid red;
-  }
-}
 
 .about-card {
   position: absolute;
   bottom: 0;
-  left: 0;
-  width: 100%;
-  transition: 1s ease;
+  left: auto;
+  width: moz-available;
   background-color: $brand-primary;
   text-transform: capitalize;
   padding: 1rem 2rem;
-  max-width: min-content;
 
   .names {
     font-weight: bolder;
@@ -392,16 +435,31 @@ img {
 .probootstrap-footer {
   background-color: $brand-black;
   .footer {
+    color: $brand-white;
+    font-size: $font-11;
+    height: 14rem;
+    display: flex;
     .copyright {
-      color: $brand-white;
-      font-size: $font-11;
+      margin: auto 0;
+      display: inline;
       img {
         filter: invert(88%);
+        width: 25%;
+        float: left;
       }
+      p {
+        color: $brand-white;
+        font-size: $font-11;
+        margin: 4rem 10rem;
+      }
+    }
+    .back-to-top {
+      margin: auto 0;
       a {
         color: $brand-white;
         font-size: $font-11;
-        text-transform: uppercase;
+        float: right;
+        margin-right: 0;
       }
     }
   }
@@ -412,7 +470,8 @@ img {
 .btn-primary {
   color: $brand-black;
   background-color: $brand-primary;
-  border-width: 0;
+  border: none;
+  border-radius: 0;
   float: left;
   text-transform: uppercase;
   padding: 1rem 2rem;
@@ -453,12 +512,6 @@ img {
       opacity: 1;
       visibility: visible;
     }
-  }
-}
-
-.hidden-md {
-  @media screen and (max-width: $screen-md) {
-    display: none;
   }
 }
 
