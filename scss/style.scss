@@ -72,7 +72,7 @@ a {
 .cabecera {
   margin-top: 3em;
   margin-bottom: 3em;
-  P{
+  P {
     width: 50%;
     margin: 3em inherit;
   }
@@ -197,7 +197,7 @@ img {
 .textos {
   clear: left;
   line-height: 1.5em;
-  margin-bottom:2rem;
+  margin-bottom: 2rem;
   .h1 {
     line-height: 3em;
   }
@@ -224,7 +224,7 @@ img {
 //portfolio
 
 .filters {
-  padding: 1em 0 0 0;
+  padding: 0 0 3rem 0;
   display: flex;
 
   .tabs {
@@ -252,9 +252,8 @@ img {
     text-transform: uppercase;
     font-size: $font-12;
     width: 100%;
-    a{
-
-    float:right;
+    a {
+      float: right;
     }
   }
 }
@@ -297,7 +296,6 @@ img {
   }
 
   .category {
-
     margin-top: 2rem;
     text-align: center;
     text-transform: uppercase;
@@ -320,9 +318,9 @@ img {
 }
 
 //about
-.team{
-  .img{
-    opacity:0;
+.team {
+  .img {
+    opacity: 0;
     border: 5px solid red;
   }
 }
@@ -340,7 +338,7 @@ img {
 
   .names {
     font-weight: bolder;
-      }
+  }
   .job-position {
     font-size: $font-12;
     color: $brand-white;
@@ -351,32 +349,31 @@ img {
 
 //contact
 
-.form-control{
+.form-control {
   color: $brand-black;
   border: 1px solid $brand-white;
   box-shadow: inset 0 1px 1px $brand-white;
   -webkit-box-shadow: inset 0 1px 1px $brand-white;
   padding: 2px;
   margin: 2px 0;
-  &:focus{
-  border: 1px solid $brand-black;
-  -webkit-box-shadow: inset 0 0 0px 0px;
-  box-shadow: inset 0 0px 0px;
-  transition: border-color ease-in-out 1s;
+  &:focus {
+    border: 1px solid $brand-black;
+    -webkit-box-shadow: inset 0 0 0px 0px;
+    box-shadow: inset 0 0px 0px;
+    transition: border-color ease-in-out 1s;
   }
-
 }
 
-.contact{
+.contact {
   display: inline-flex;
   text-align: center;
   margin: 2rem auto;
   float: none;
-  span{
+  span {
     margin: 0 auto;
     font-size: $font-12;
     padding: 1rem;
-    .icon{
+    .icon {
       font-size: $font-30;
       margin: 1rem;
       color: $brand-primary;
@@ -384,61 +381,34 @@ img {
     }
   }
 }
-.social{
+.social {
   display: block;
   text-align: center;
   margin: 2rem auto;
   float: none;
-  span{
-  padding: 2rem;
-  font-size: $font-30;
-}
+  span {
+    padding: 2rem;
+    font-size: $font-30;
+  }
 }
 
 //footer
 
-.probootstrap-footer{
+.probootstrap-footer {
   background-color: $brand-black;
-  .footer{
-    display: flex;
+  .footer {
     .copyright {
-      // display: flex;
       color: $brand-white;
       font-size: $font-11;
-      margin: auto 0;
-      img{
-      filter: invert(88%);
-        width: 10%;
+      img {
+        filter: invert(88%);
+      }
+      a {
+        color: $brand-white;
+        font-size: $font-11;
+        text-transform: uppercase;
+      }
     }
-    a{
-      color: $brand-white;
-      font-size: $font-11;
-      float: right;
-      text-transform: uppercase;
-    }
-  }
-}
-}
-
-
-// selection
-::selection {
-  background: $brand-primary;
-  color: $brand-black;
-}
-
-::-moz-selection {
-  background: $brand-black;
-  color: $brand-white;
-}
-
-// absolute container
-.probootstrap-absolute {
-  position: absolute;
-  width: 60%;
-
-  @media screen and (max-width: $screen-xs) {
-    position: relative;
   }
 }
 
@@ -457,44 +427,12 @@ img {
   &:active,
   &:visited,
   &:focus,
-  &:active:hover{
+  &:active:hover {
     transition: 1s all;
     box-shadow: none;
     color: $brand-primary;
     background-color: $brand-black;
   }
-}
-
-// back to top button
-.back-to-top-button {
-  color: $brand-primary;
-  float: right;
-  margin-right: 10em;
-
-  &:hover,
-  &:focus {
-    transition: 1s all;
-    transform: scale(0.95);
-    box-shadow: none;
-    color: $brand-primary;
-  }
-}
-
-// rate
-.rate {
-  font-size: 12px;
-  color: #7bc74d !important;
-
-  i {
-    @include inline-block;
-    margin-right: 4px;
-    margin-bottom: 4px;
-  }
-}
-
-.like {
-  font-size: 14px;
-  color: lighten($brand-black, 60%) !important;
 }
 
 // link with icon
@@ -523,45 +461,17 @@ img {
   }
 }
 
-
-// footer social
-.probootstrap-footer-social {
-  padding: 0;
-  margin: 0;
-
-  li {
-    display: inline;
-    padding: 2em;
-    margin: 0;
-    list-style: none;
-
-    a {
-      padding: 10px;
-      font-size: 22px;
-    }
-
-    &:first-child {
-      >a {
-        padding-left: 0;
-      }
-    }
-  }
-}
-
 .hidden-md {
   @media screen and (max-width: $screen-md) {
     display: none;
   }
 }
 
-
 // animate
 .probootstrap-animate {
   opacity: 0;
   visibility: hidden;
 }
-
-
 
 // magnific popup
 .mfp-fade.mfp-bg {
@@ -625,4 +535,3 @@ img {
 .image-source-link {
   color: #ddd;
 }
-
