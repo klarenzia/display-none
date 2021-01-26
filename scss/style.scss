@@ -81,10 +81,12 @@ img {
 //nav/
 
 .probootstrap-header {
-  padding: 2rem 0 6rem;
+  padding: 2rem 0 2rem;
   width: 100%;
   z-index: 4;
   display: inline-block;
+  position: fixed;
+  background-color: $brand-white;
 
   @media screen and (max-width: $screen-sm) {
     margin: 0 auto;
@@ -167,6 +169,7 @@ img {
 //header
 .aligned {
   display: flex;
+  margin-top: 15rem;
   .centered {
     margin: auto 0;
   }
