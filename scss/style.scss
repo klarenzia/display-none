@@ -3,16 +3,19 @@
 html {
   overflow-x: hidden;
   font-size: 0.8vw;
+  @media (max-width: 800px) {
+    font-size: 12px;
+  }
 }
 
 body {
   background: $brand-white;
   color: $brand-body-text-color;
   font-family: $font-primary;
+}
 
-  @media screen and (max-width: $screen-sm) {
-    font-size: 0.75em;
-  }
+.container {
+  width: 60%;
 }
 
 // Typography
@@ -34,9 +37,6 @@ h1 {
 h2 {
   font-size: $font-30;
   font-weight: bolder;
-  @media screen and (max-width: $screen-sm) {
-    font-size: 1.4rem;
-  }
 }
 
 h3 {
