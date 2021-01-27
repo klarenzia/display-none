@@ -62,6 +62,7 @@ a {
     color: $brand-body-text-color;
   }
 }
+
 p,
 a,
 .btn {
@@ -149,13 +150,6 @@ img {
   clear: left;
   line-height: 1.5em;
   margin-bottom: 2rem;
-}
-
-@media screen and (max-width: $screen-sm) {
-  margin: 0 auto;
-  float: left;
-  display: contents;
-  padding: 1em;
 }
 
 //section
