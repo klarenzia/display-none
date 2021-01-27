@@ -38,10 +38,13 @@
       </nav>
     </div>
   </header>
+  <div class="margin"></div>
   <!-- END:  NAVBAR -->
 
-  <!-- START: section HEADER-->
-  <section class="probootstrap-section ">
+
+
+  <!-- START: section COVER-->
+  <section class="probootstrap-section">
     <div class="container">
       <div class="row aligned">
         <div class="col-sm-6 probootstrap-animate centered">
@@ -85,7 +88,7 @@
               <li><a href="#" data-tag="web" class="button">Web</a></li>
             </ul>
           </div>
-          <div class="col-sm-6 col-xs-12 ">
+          <div class="col-sm-6 hidden-xs">
             <div class="dropdown">
               <button class="btn dropbtn">Newest first <i class="fa fa-caret-down"></i></button>
               <div class="dropdown-content">
@@ -168,30 +171,30 @@
   <!-- START: section ABOUT -->
   <section class="probootstrap-section">
     <div class="container">
-      <div class="row probootstrap-box">
-        <div class="col-sm-12 cabecera">
+      <div class="row ">
+        <div class="col col-md-6 cabecera">
           <h1>ABOUT US.
           </h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua.</p>
         </div>
       </div>
-      <div class="row aligned ">
-        <div class="col-sm-4  probootstrap-box">
-          <a><img class="image" src="img/square.jpg" alt="Creative Agency" /></a>
+      <div class="row about ">
+        <div class="col-sm-4  about-person">
+          <img class="image" src="img/square.jpg" alt="Creative Agency" />
           <div class="probootstrap-animate about-card">
             <div class="names">Luke Skywalker</div>
             <div class="job-position">Web designer</div>
           </div>
         </div>
-        <div class="col-sm-4 probootstrap-box">
-          <a><img class="image" src="img/square2.jpg" alt="Creative Agency" /></a>
+        <div class="col-sm-4  about-person">
+          <img class="image" src="img/square2.jpg" alt="Creative Agency" />
           <div class="probootstrap-animate about-card">
             <div class="names">Luke Skywalker</div>
             <div class="job-position">Web designer</div>
           </div>
         </div>
-        <div class="col-sm-4 centered">
+        <div class="col-sm-4 about-text">
           <div class="textos">
             <h2>Little About Us
             </h2>
@@ -211,7 +214,7 @@
   <section class="probootstrap-section">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 cabecera">
+        <div class="col col-md-6 cabecera">
           <h1>OUR BLOG.
           </h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -258,7 +261,7 @@
   <section class="probootstrap-section">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 cabecera ">
+        <div class="col col-md-6 cabecera ">
           <h1>CONTACT US.
           </h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -266,7 +269,7 @@
         </div>
       </div>
       <div class="row aligned">
-        <div class="col-sm-6 centered probootstrap-animate">
+        <div class=" col-sm-6 centered probootstrap-animate">
           <h2>Send Us Message</h2>
           <div class="form">
             <input type="text" id="typeText" class="form-control" placeholder="Name" />
@@ -279,7 +282,7 @@
           </div>
           <button type="button" class="btn btn-primary">Send Message</button>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6  hidden-xs">
           <img class="image" src="img/square2.jpg" alt="Creative Agency" />
         </div>
       </div>
@@ -287,15 +290,21 @@
         <div class="col-sm-12 contact">
           <span>
             <div><i class="icon fas fa-map-marker-alt"></i></div>
-            <div>1211 Awesome Avenue. <br> NY USD</div>
+            <div>
+              <p>1211 Awesome Avenue. <br> NY USD</p>
+            </div>
           </span>
           <span>
             <div><i class="icon fas fa-mobile-alt"></i></div>
-            <div>+00 123-456-78 <br>+00 123-456-78</div>
+            <div>
+              <p>+00 123-456-78 <br>+00 123-456-78</p>
+            </div>
           </span>
           <span>
             <div><i class="icon far fa-window-maximize"></i></div>
-            <div>mint@mintmail.com</div>
+            <div>
+              <p>mint@mintmail.com</p>
+            </div>
           </span>
         </div>
         <div class="col-sm-12 social">
@@ -312,7 +321,7 @@
   <section class="probootstrap-footer">
     <div class="container">
       <div class="row footer">
-        <div class="col-md-6 copyright">
+        <div class="col-xs-12 col-md-6 copyright">
           <div>
             <img class="image" src="img/logo.png" alt="Creative Agency" />
           </div>
@@ -320,8 +329,8 @@
             <p>&copy;2021. Mint. All right reserved.</p>
           </div>
         </div>
-        <div class="col-sm-6 back-to-top ">
-          <div><a href="#" class="js-backtotop"> Back to top ▲</a></div>
+        <div class="col-sm-6 back-to-top hidden-xs ">
+          <div><a href="#" class="js-backtotop">Back to top ▲</a></div>
         </div>
       </div>
     </div>

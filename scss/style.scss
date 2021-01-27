@@ -67,7 +67,7 @@ p,
 a,
 .btn {
   @media (max-width: 800px) {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
@@ -77,7 +77,7 @@ a,
   margin-top: 3em;
   margin-bottom: 3em;
   P {
-    width: 50%;
+    width: 100%;
     margin: 3em inherit;
   }
 }
@@ -90,42 +90,22 @@ img {
 //nav/
 
 .probootstrap-header {
-  padding: 2rem 0 2rem;
   width: 100%;
   z-index: 4;
   display: inline-block;
-  position: fixed;
   background-color: $brand-white;
-
-  @media screen and (max-width: $screen-sm) {
-    margin: 0 auto;
-    display: -webkit-box;
-    position: relative;
-    padding: 4em 0 0;
+  display: -webkit-box;
+  padding: 2em 0 0;
+  @media screen and (min-width: 550px) {
+    padding: 2rem 0 2rem;
+    position: fixed;
+    margin-top: 0;
   }
 }
 
 .logo {
   float: left;
   width: 10%;
-
-  @media screen and (max-width: $screen-sm) {
-    width: -webkit-fill-available;
-    text-align: center;
-
-    img {
-      width: 40%;
-    }
-  }
-
-  @media screen and (max-width: $screen-xs) {
-    width: -webkit-fill-available;
-    text-align: center;
-
-    img {
-      width: 60%;
-    }
-  }
 }
 
 .probootstrap-nav {
@@ -142,31 +122,12 @@ img {
   float: right;
   padding: 1rem 0 0 0;
 
-  @media screen and (max-width: $screen-sm) {
-    display: inline;
-    text-align: center;
-    padding: 2rem 0 0;
-  }
-
   li {
     margin: 0;
     padding: 0 0 0 4rem;
     list-style: none;
     display: inline;
     font-size: $font-15;
-
-    @media screen and (max-width: $screen-sm) {
-      text-align: center;
-      padding: 10px;
-      margin: 3rem;
-      font-size: smaller;
-    }
-
-    @media screen and (max-width: $screen-xs) {
-      margin: 1rem;
-      padding: 0px;
-    }
-
     a {
       &:hover {
         color: $brand-primary;
@@ -175,10 +136,12 @@ img {
   }
 }
 
-//header
-.header-section {
-  margin-top: 15rem;
+.margin {
+  height: 15rem;
+  margin-top: 0;
 }
+
+//COVER
 
 .aligned {
   display: flex;
@@ -188,28 +151,30 @@ img {
 }
 
 // box
-.probootstrap-box {
-  height: auto;
+// .probootstrap-box {
+//   height: auto;
 
-  .image {
-    width: 100%;
+//   .image {
+//     width: 100%;
 
-    @media screen and (max-width: $screen-sm) {
-      margin: 0;
-      width: 50%;
-      float: left;
-      display: inline-block;
-      padding: 0.5em;
-    }
-  }
-}
+//     @media screen and (max-width: $screen-sm) {
+//       margin: 0;
+//       width: 50%;
+//       float: left;
+//       display: inline-block;
+//       padding: 0.5em;
+//     }
+//   }
+// }
 
 .textos {
   clear: left;
   line-height: 1.5em;
   margin-bottom: 2rem;
-  .h1 {
-    line-height: 3em;
+  a {
+    &:hover {
+      font-weight: 800;
+    }
   }
 }
 
@@ -325,6 +290,7 @@ img {
 .gallery-column {
   display: flex;
   flex-direction: column;
+  padding-bottom: 15px;
 
   .media {
     margin-bottom: 1rem;
@@ -382,6 +348,12 @@ img {
 }
 
 //about
+.about-person {
+  margin-bottom: 15px;
+  @media (max-width: 800) {
+    width: 45%;
+  }
+}
 
 .about-card {
   position: absolute;
@@ -396,7 +368,7 @@ img {
     font-weight: bolder;
   }
   .job-position {
-    font-size: $font-12;
+    font-size: 0.8em;
     color: $brand-white;
   }
 }
@@ -421,30 +393,39 @@ img {
 }
 
 .contact {
-  display: inline-flex;
+  display: flex;
   text-align: center;
-  margin: 2rem auto;
+  margin: 2em auto;
   float: none;
   span {
     margin: 0 auto;
     font-size: $font-12;
     padding: 1rem;
+    @media (max-width: 500px) {
+      font-size: 3rem;
+    }
     .icon {
       font-size: $font-30;
       margin: 1rem;
       color: $brand-primary;
       -webkit-text-stroke: 1px $brand-black;
+      @media (max-width: 500px) {
+        font-size: 6rem;
+      }
     }
   }
 }
 .social {
   display: block;
   text-align: center;
-  margin: 2rem auto;
+  margin: 2em auto;
   float: none;
-  span {
+  a {
     padding: 2rem;
     font-size: $font-30;
+    @media (max-width: 500px) {
+      font-size: 6rem;
+    }
   }
 }
 
@@ -457,6 +438,9 @@ img {
     font-size: $font-11;
     height: 14rem;
     display: flex;
+    @media (max-width: 800px) {
+      height: min-content;
+    }
     .copyright {
       margin: auto 0;
       display: inline;
@@ -464,11 +448,19 @@ img {
         filter: invert(88%);
         width: 25%;
         float: left;
+        @media (max-width: 800px) {
+          width: 25%;
+        }
       }
       p {
         color: $brand-white;
         font-size: $font-11;
         margin: 4rem 10rem;
+        @media (max-width: 800px) {
+          font-size: 8px;
+          margin: 4rem;
+          text-align: center;
+        }
       }
     }
     .back-to-top {
