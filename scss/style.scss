@@ -3,6 +3,9 @@
 html {
   overflow-x: hidden;
   font-size: 0.8vw;
+  @media (max-width: 500px) {
+    font-size: 1.3vw;
+  }
 }
 
 body {
@@ -84,7 +87,8 @@ a,
 
 img {
   opacity: 1;
-  width: -moz-available;
+  max-width: 100%;
+  height: auto;
 }
 
 //nav/
