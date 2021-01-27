@@ -19,6 +19,7 @@ gulp.task("scripts", function () {
       "js/vendor/owl.carousel.min.js",
       "js/vendor/bootstrap.min.js",
       "js/vendor/jquery.waypoints.min.js",
+      "js/vendor/jquery.poptrox.min.js",
     ])
     .pipe(concat("scripts.min.js"))
     .pipe(uglify())
