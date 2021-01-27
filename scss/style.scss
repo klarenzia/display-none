@@ -53,14 +53,13 @@ p {
 }
 
 a {
-  transition: 1s all;
   color: $brand-body-text-color;
   font-weight: 500;
   &:hover,
   &:focus,
   &:active {
-    color: $brand-body-text-color;
     text-decoration: none;
+    color: $brand-body-text-color;
   }
 }
 p,
@@ -74,7 +73,7 @@ a,
 //elementos
 
 .cabecera {
-  margin-top: 3em;
+  margin-top: 6em;
   margin-bottom: 3em;
   P {
     width: 100%;
@@ -83,7 +82,7 @@ a,
 }
 
 img {
-  opacity: 0.6;
+  opacity: 1;
   width: -moz-available;
 }
 
@@ -171,11 +170,6 @@ img {
   clear: left;
   line-height: 1.5em;
   margin-bottom: 2rem;
-  a {
-    &:hover {
-      font-weight: 800;
-    }
-  }
 }
 
 @media screen and (max-width: $screen-sm) {
@@ -250,6 +244,7 @@ img {
   &:hover {
     background-color: $brand-primary;
     transition: 1s all;
+    border-radius: 0;
   }
   @media (max-width: 800px) {
     font-size: 12px;
@@ -486,16 +481,22 @@ img {
   text-transform: uppercase;
   padding: 1rem 2rem;
   margin-top: 2rem;
-
   &:hover,
   &:active,
-  &:visited,
   &:focus,
   &:active:hover {
-    transition: 1s all;
-    box-shadow: none;
-    color: $brand-primary;
-    background-color: $brand-black;
+    color: $brand-body-text-color;
+    background-color: $brand-primary;
+  }
+  a {
+    color: $brand-body-text-color;
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: none;
+      color: $brand-body-text-color;
+      font-weight: 600;
+    }
   }
 }
 
