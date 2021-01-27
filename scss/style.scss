@@ -120,7 +120,6 @@ img {
 .probootstrap-main-nav {
   float: right;
   padding: 1rem 0 0 0;
-
   li {
     margin: 0;
     padding: 0 0 0 4rem;
@@ -128,6 +127,7 @@ img {
     display: inline;
     font-size: $font-15;
     a {
+      transition: 0.75s all;
       &:hover {
         color: $brand-primary;
       }
@@ -148,23 +148,6 @@ img {
     margin: auto 0;
   }
 }
-
-// box
-// .probootstrap-box {
-//   height: auto;
-
-//   .image {
-//     width: 100%;
-
-//     @media screen and (max-width: $screen-sm) {
-//       margin: 0;
-//       width: 50%;
-//       float: left;
-//       display: inline-block;
-//       padding: 0.5em;
-//     }
-//   }
-// }
 
 .textos {
   clear: left;
@@ -210,7 +193,7 @@ img {
       font-size: $font-12;
 
       &:hover {
-        transition: 0.2s all;
+        transition: 1s all;
         box-shadow: none;
         color: $brand-black;
         background-color: $brand-primary;
@@ -237,6 +220,7 @@ img {
 
 .dropbtn {
   font-size: $font-12;
+  border-radius: 0;
   border: none;
   background-color: $brand-white;
   padding: 1rem;
@@ -244,7 +228,6 @@ img {
   &:hover {
     background-color: $brand-primary;
     transition: 1s all;
-    border-radius: 0;
   }
   @media (max-width: 800px) {
     font-size: 12px;
@@ -257,6 +240,7 @@ img {
   z-index: 1;
   min-width: 100%;
   float: right;
+  transition: 2s all;
   a {
     display: block;
     text-align: right;
@@ -489,6 +473,7 @@ img {
     background-color: $brand-primary;
   }
   a {
+    transition: font-weight 0s ease-in;
     color: $brand-body-text-color;
     &:hover,
     &:focus,
@@ -500,97 +485,8 @@ img {
   }
 }
 
-// link with icon
-.link-with-icon {
-  color: $brand-primary;
-
-  i {
-    position: relative;
-    top: 2px;
-    visibility: hidden;
-    transition: 0.3s all;
-    left: -20px;
-  }
-
-  &:hover,
-  &:focus {
-    color: darken($brand-primary, 10%);
-
-    i {
-      position: relative;
-      top: 2px;
-      left: 0px;
-      opacity: 1;
-      visibility: visible;
-    }
-  }
-}
-
 // animate
 .probootstrap-animate {
   opacity: 0;
   visibility: hidden;
-}
-
-// magnific popup
-.mfp-fade.mfp-bg {
-  opacity: 0;
-  -webkit-transition: all 0.15s ease-out;
-  -moz-transition: all 0.15s ease-out;
-  transition: all 0.15s ease-out;
-}
-
-.mfp-fade.mfp-bg.mfp-ready {
-  opacity: 0.8;
-}
-
-.mfp-fade.mfp-bg.mfp-removing {
-  opacity: 0;
-}
-
-.mfp-fade.mfp-wrap .mfp-content {
-  opacity: 0;
-  -webkit-transition: all 0.15s ease-out;
-  -moz-transition: all 0.15s ease-out;
-  transition: all 0.15s ease-out;
-}
-
-.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
-  opacity: 1;
-}
-
-.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
-  opacity: 0;
-}
-
-.image-link {
-  cursor: -webkit-zoom-in;
-  cursor: -moz-zoom-in;
-  cursor: zoom-in;
-}
-
-/* padding-bottom and top for image */
-.mfp-no-margins img.mfp-img {
-  padding: 0;
-}
-
-/* position of shadow behind the image */
-.mfp-no-margins .mfp-figure:after {
-  top: 0;
-  bottom: 0;
-}
-
-/* padding for main container */
-.mfp-no-margins .mfp-container {
-  padding: 0;
-}
-
-/* aligns caption to center */
-.mfp-title {
-  text-align: center;
-  padding: 6px 0;
-}
-
-.image-source-link {
-  color: #ddd;
 }
