@@ -16,6 +16,7 @@ gulp.task("scripts", function () {
       "js/vendor/jquery.min.js",
       "js/vendor/jquery.easing.1.3.js",
       "js/vendor/bootstrap.min.js",
+      "js/vendor/jquery.waypoints.min.js",
       "js/vendor/jquery.poptrox.min.js",
     ])
     .pipe(concat("scripts.min.js"))
