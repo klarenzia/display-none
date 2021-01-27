@@ -2,8 +2,8 @@
   "use strict";
 
   /*----------------------------------------
-		Detect Mobile
-	----------------------------------------*/
+    Detect Mobile
+  ----------------------------------------*/
   var isMobile = {
     Android: function () {
       return navigator.userAgent.match(/Android/i);
@@ -32,8 +32,8 @@
   };
 
   /*----------------------------------------
-		Back to top
-	----------------------------------------*/
+    Back to top
+  ----------------------------------------*/
   var backToTop = function () {
     $(".js-backtotop").on("click", function (e) {
       e.preventDefault();
@@ -87,8 +87,8 @@
   // };
 
   /*----------------------------------------
-	// 	Menu Hover
-	// ----------------------------------------*/
+  // 	Menu Hover
+  // ----------------------------------------*/
   // var menuHover = function () {
   //   if (!isMobile.any()) {
   //     $(".probootstrap-navbar .navbar-nav li.dropdown").hover(
@@ -112,8 +112,8 @@
   // };
 
   /*----------------------------------------
-		Content Animation
-	----------------------------------------*/
+    Content Animation
+  ----------------------------------------*/
   var contentWayPoint = function () {
     var i = 0;
     $(".probootstrap-animate").waypoint(
@@ -154,8 +154,8 @@
   };
 
   /*----------------------------------------
-	 Pop-up
-	----------------------------------------*/
+   Pop-up
+  ----------------------------------------*/
   var magnificPopupControl = function () {
     $(".popup-link").magnificPopup({
       delegate: "img",
@@ -245,8 +245,8 @@
   };
 
   /*----------------------------------------
-		Document Ready 
-	----------------------------------------*/
+    Document Ready 
+  ----------------------------------------*/
   $(document).ready(function () {
     contentWayPoint();
     backToTop();
